@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    box-sizing: border-box;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 25px;
+    align-items: center;
+}
+
+.navLinks {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin-left: 30px;
+}
+
+.navLinks li a {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+}
+
+.navLinks li a:hover {
+    color: blue;
+    text-shadow: gray;
+}
+
+.hero {
+    display: flex;
+    height: auto;
+    background: rgb(183, 187, 185);
+    
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+.myPhoto {
+    min-width: 250px;
+    height: auto;
+    margin-top: 40px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.heroText {
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+    margin-left: 50px;
+    line-height: 2.5;
+    font-size: 20px;
+}
+
+.hello {
+    word-spacing: 10px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.coreSkills {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.skillsList {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills {
+    background: rgb(190, 186, 186);
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.skills:hover {
+    background: lightskyblue;
+    box-shadow: yellow;
+}
+
+footer {
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+    background: rgb(131, 146, 146);
+    padding: 20px;
+    line-height: 1.5;
+}
+
+.email {
+    text-decoration: none;
+    color: rgb(13, 14, 100);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.email:hover {
+    color: brown;
+}
+
+@media(max-width: 375px){
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background: lightseagreen;
+        color: white;
+    }
+   
+    .heroText {
+        width: 100%;
+        margin: 20px 0;
+        text-align: center;
+        align-items: center;
+    }
+   
+    .navBar {
+        flex-direction: column;
+        align-items: flex-start;
+        background: lightseagreen;
+        color: white;
+    }
+   
+    .navLinks {
+        flex-direction: column;
+        margin-left: 0;
+        gap: 10px;
+    }
+   
+    .myPhoto {
+        margin: 20px 0;
+        height: 100px;
+    }
+   
+    .skills {
+        width: 100%;
+        max-width: 300px;
+    }
+}
