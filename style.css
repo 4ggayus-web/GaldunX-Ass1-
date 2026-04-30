@@ -11,9 +11,9 @@ body {
     min-height: 100vh;
 }
 
-/*main {
+main {
     flex: 1;
-}*/
+}
 
 .navBar {
     display: flex;
@@ -45,7 +45,7 @@ body {
     display: flex;
     height: auto;
     background: rgb(183, 187, 185);
-    min-height: 100vh;
+    min-height: auto;
     justify-content: space-between;
     gap: 10px;
     padding: 20px;
