@@ -43,13 +43,11 @@ main {
 
 .hero {
     display: flex;
-    height: auto;
     background: rgb(183, 187, 185);
-    min-height: auto;
-    justify-content: space-between;
-    gap: 10px;
+    gap: 20px;
     padding: 20px;
     line-height: 1.5;
+    align-items: center;
 }
 
 .myPhoto {
@@ -59,15 +57,14 @@ main {
     margin-top: 40px;
     margin-left: 20px;
     border-radius: 10px;
-    display: block;
-    object-fit: cover;
 }
 
 .heroText {
     align-items: center;
     justify-content: center;
-    margin-top: 150px;
-    margin-left: 50px;
+    /*margin-top: 150px;
+    margin-left: 50px;*/
+    margin: 0;
     line-height: 2.5;
     font-size: 20px;
 }
@@ -163,6 +160,7 @@ footer {
     }
    
     .myPhoto {
+        width: 200px;
         max-width: 100%; 
         margin: 20px 0;
     }
